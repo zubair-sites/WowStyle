@@ -2,22 +2,23 @@
 
 _Last updated: 2026-10-30_
 
-## Known so far
-- Platform: WordPress.
-- Business: not confirmed. A third-party listing for thewowstyle.com describes a
-  lifestyle blog (home decor, interiors, travel, fashion, home improvement).
-  Need to confirm whether the .co.uk site is the same.
+## Summary
+The site is a fresh install of the Kayleen theme (Elementor) with **no published
+content**. It is effectively a build from scratch. See `AUDIT.md` for findings.
 
-## Blockers
-1. `thewowstyle.co.uk` is not in the cloud environment's allowed network domains,
-   so the site cannot be loaded or audited.
-2. No WordPress Application Password set (`WP_URL`, `WP_USER`, `WP_APP_PASSWORD`).
+## Access
+- Network access to thewowstyle.co.uk: working.
+- WordPress Application Password: owner says it's added, but the variables were not
+  present in the 2026-10-30 session. Environment changes apply to new sessions, so
+  check `tools/wp.py check` at the start of the next session.
 
 ## Open questions for the owner
-- What is the business, and who is the audience?
-- Main goal: traffic, sales/enquiries, redesign, or fixing problems?
-- Plugins in use: WooCommerce? Elementor/Divi? Yoast/RankMath?
-- Monetisation: ads, affiliate links, sponsored posts?
+- Niche and audience (fashion? lifestyle? home & interiors?).
+- Monetisation plan: ads, affiliate links, sponsored posts, products?
+- Who is the author/brand shown on the About page?
+- Are there drafts or old posts we should keep?
+- Did the owner run the demo import this morning, or someone else?
 
 ## Next step
-Once access is in place: run `tools/wp.py check`, then the audit in `docs/AUDIT.md`.
+Security quick fixes (owner, in WP admin), then build: structure, core pages, SEO
+plugin, first batch of posts.
