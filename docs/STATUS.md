@@ -12,6 +12,11 @@ content**. It is effectively a build from scratch. See `AUDIT.md` for findings.
   present in the 2026-10-30 session. Environment changes apply to new sessions, so
   check `tools/wp.py check` at the start of the next session.
 
+- SSH (Hostinger, 156.67.72.11:65002): enabled by owner, but **not reachable from
+  the cloud environment** — direct TCP times out and tunnelling through the egress
+  proxy is not permitted. Don't rely on SSH; use the REST API (+ Elementor MCP endpoint)
+  and give the owner click-by-click steps for anything else.
+
 ## Open questions for the owner
 - Niche and audience (fashion? lifestyle? home & interiors?).
 - Monetisation plan: ads, affiliate links, sponsored posts, products?
