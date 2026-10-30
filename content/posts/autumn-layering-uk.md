@@ -2,8 +2,12 @@
 title: What to Wear in Autumn: Layering Without the Bulk
 slug: autumn-layering-guide
 category: outfit-ideas
-image: 3399
+image: 3658
 excerpt: Autumn in the UK means cold mornings, mild afternoons and sudden showers. These layering rules and outfit ideas will keep you comfortable and looking put together all day.
+quick: Layer from thin to thick, vary the lengths so each layer shows, and mix textures while keeping to two or three colours. A fine knit, straight jeans and a trench coat is the easiest autumn outfit to adapt from a cold morning to a mild afternoon.
+seo_title: What to Wear in Autumn: Layering Without the Bulk %sep% %sitename%
+description: Three layering rules and five autumn outfit formulas for UK weather, from trench and knit to tonal neutrals, plus the autumn essentials worth having.
+keyword: autumn layering outfits, what to wear in autumn uk
 ---
 Autumn in the UK can mean three seasons in one day: a cold morning, a mild afternoon and a shower on the way home. The answer is layering, but done well, so you stay comfortable without looking like you're wearing everything you own.
 
@@ -16,7 +20,7 @@ Autumn in the UK can mean three seasons in one day: a cold morning, a mild after
 ## Five autumn outfit formulas
 
 ### 1. Trench, knit and jeans
-A fine-knit jumper, straight jeans and a trench coat, with loafers or ankle boots. If it's warm by lunchtime, the trench comes off and the outfit still works.
+A fine-knit jumper, straight jeans and a trench coat, with loafers or ankle boots. All three are on our [capsule wardrobe checklist](/capsule-wardrobe-checklist/). If it's warm by lunchtime, the trench comes off and the outfit still works.
 
 ### 2. Shirt under a jumper
 Wear a crisp shirt under a crew-neck jumper, with the collar and cuffs showing. Add tailored trousers for work or jeans for the weekend.
@@ -36,8 +40,22 @@ Camel coat, cream knit, beige trousers. Dressing in shades of one colour looks p
 - Two or three fine-knit jumpers (merino is warm but thin)
 - Ankle boots you can walk in all day
 - A large wool scarf that doubles as a wrap
-- A crossbody bag, so your hands are free for an umbrella
+- A crossbody bag, so your hands are free for an umbrella (see [how to choose a handbag](/how-to-choose-a-handbag/))
 
 ## The takeaway
 
 Build outfits from light layers you can take off rather than one heavy one. Keep the palette simple and the textures interesting, and you'll be ready for whatever the day brings.
+
+## Frequently asked questions
+
+### How do you layer clothes without looking bulky?
+
+Start with thin layers such as fine knits and shirts, finish with the heaviest piece, and choose fitted base layers. Fewer, thinner layers are warmer and look neater than one bulky jumper.
+
+### What should I wear in autumn in the UK?
+
+Plan for changeable weather: a water-resistant trench or mac, a fine-knit jumper you can remove, jeans or trousers, and ankle boots you can walk in all day.
+
+### What colours work best for autumn layering?
+
+Two or three colours from the same family, such as camel, cream and brown or navy, grey and white. Add interest with texture rather than more colours.

@@ -2,8 +2,12 @@
 title: How to Style a White T-Shirt: 7 Outfits That Always Work
 slug: how-to-style-a-white-t-shirt
 category: outfit-ideas
-image: 22
+image: 3654
 excerpt: The plain white tee is the hardest-working piece in most wardrobes. Here are seven easy outfits, from weekend jeans to the office, plus how to pick one that lasts.
+quick: Choose a mid-weight cotton crew-neck that fits at the shoulder, then pair it with straight jeans and loafers, a blazer, a midi skirt or wide-leg trousers. Tuck it in to define your waist and keep accessories simple.
+seo_title: How to Style a White T-Shirt: 7 Outfits That Always Work %sep% %sitename%
+description: Seven easy ways to style a white T-shirt, from jeans and loafers to blazers and midi skirts, plus how to choose a tee that fits and stays white.
+keyword: how to style a white t-shirt, white t-shirt outfits
 ---
 A good white T-shirt costs little, goes with almost everything and looks right in every season. The trick is in the fit, the fabric and what you pair it with. Here are seven outfits that work every time.
 
@@ -16,7 +20,7 @@ A good white T-shirt costs little, goes with almost everything and looks right i
 
 ## 1. Straight-leg jeans and loafers
 
-The classic. Do a half-tuck at the front to show your waist, add a belt, and finish with loafers or clean white trainers. Blue denim, white tee and one gold piece of jewellery is a formula you can repeat all year.
+The classic. Do a half-tuck at the front to show your waist, add a belt, and finish with loafers or clean white trainers. Blue denim, white tee and one gold piece of jewellery is a formula you can repeat all year. Our [white trainers guide](/white-trainers-guide/) covers the shoes that go with it.
 
 ## 2. Under a blazer for the office
 
@@ -51,4 +55,22 @@ A good white tee, high-waisted tailored trousers and heeled mules or slingbacks 
 
 ## The takeaway
 
-Buy one well-fitting, good-weight white tee and you have the base for dozens of outfits. Start with jeans and a blazer, then try it with the skirts and trousers you already own.
+Buy one well-fitting, good-weight white tee and you have the base for dozens of outfits. It's the first piece on our [capsule wardrobe checklist](/capsule-wardrobe-checklist/) for a reason. Start with jeans and a blazer, then try it with the skirts and trousers you already own.
+
+## Frequently asked questions
+
+### What should I wear with a white T-shirt?
+
+Almost anything. The most reliable pairings are straight-leg jeans, tailored trousers, midi skirts and wide-leg trousers, finished with loafers, white trainers or ankle boots.
+
+### How do I stop a white T-shirt from going see-through?
+
+Choose a mid-weight cotton, roughly 160–200 gsm, and wear a skin-tone bra or vest underneath rather than a white one.
+
+### Should a white T-shirt be tucked in?
+
+A half-tuck or full tuck defines your waist and looks more polished with high-waisted trousers and skirts. Leave it loose with relaxed jeans or under a blazer for a casual look.
+
+### How do I keep white T-shirts white?
+
+Wash whites together at 30–40°C, treat stains before washing, avoid overloading the machine and dry them out of direct sun to stop yellowing.

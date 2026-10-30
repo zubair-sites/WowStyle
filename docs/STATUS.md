@@ -1,44 +1,36 @@
 # Status
 
-_Last updated: 2026-10-30_
+_Last updated: 2026-10-30 (session 3)_
 
 ## Summary
-Brand, homepage, core pages and 6 starter posts are live (see CHANGELOG 2026-10-30
-session 2). Waiting on the owner's review and the WP-admin steps below.
+The site is built and live: brand, theme, header/footer, 6 posts, all core and legal pages,
+Write for Us (guest/sponsored posts), Rank Math SEO/AEO/GEO setup, indexing on. No demo
+content remains. Next: the content plan (separate session).
 
-## Needs the owner (in WP admin)
-These live in the theme options / Rivax header-footer templates, which the REST API
-can't reach (installing a code-snippets plugin to do it was blocked by the session's
-safety rules; the owner can allow it instead).
-1. Theme options: logo → `the-wow-style-logo-dark.png` (light version for dark headers);
-   accent colour `#ff2c54` → `#111111`.
-2. Rivax "Default Footer" (1213): Category list (Health/Typography/Music/Travel are demo
-   text), add Privacy Policy + Affiliate Disclosure links, social links, newsletter block
-   (needs Mailchimp API key, or remove it).
-3. Rank Math setup wizard (no meta descriptions/OG/sitemap output yet).
-4. Settings → Reading: untick "Discourage search engines" once happy.
-5. Send a test message through the Contact form.
-6. Delete the WP Reset plugin; real author name/photo/bio (see open questions).
+## Needs the owner
+1. **Real author.** Send the writer's name, photo and 2–3 line bio; we'll create their user,
+   set it as author on posts (stronger E-E-A-T) and show them on About.
+2. **Google Search Console:** verify the domain and submit `https://thewowstyle.co.uk/sitemap_index.xml`.
+   Optionally connect Rank Math → Analytics.
+3. **Contact form:** send one test message (goes to the WordPress admin email).
+4. **Social profiles:** if/when they exist, send the URLs (footer, schema `sameAs`).
+5. **Newsletter:** Mailchimp isn't connected. Add an API key (MC4WP) if you want sign-ups.
+6. **Cloud environment variables:** remove the `< >` around `WP_USER`/`WP_APP_PASSWORD` and
+   set `WP_USER` to the login email, so sessions don't need to correct them.
+7. Review the legal pages (privacy, terms, affiliate, editorial) and the Write for Us rules.
+
+## How changes are made
+- REST API with the application password (`tools/wp.py`).
+- Theme options, Rivax templates and Rank Math settings are **not** exposed by the REST API.
+  Changing them again needs the setup endpoint: install Code Snippets, add
+  `tools/snippets/setup-endpoints.php` as a snippet, do the work, then delete both.
+- Permanent site code lives in the mu-plugin (`tools/mu-plugin/wowstyle-site.php`); redeploy
+  it through the setup endpoint (`POST /wowstyle/v1/mu-plugin`) or by file manager.
 
 ## Access
-- WordPress REST API: **working as administrator** (checked 2026-10-30), but only
-  after correcting the stored values in-session. Owner to fix the environment:
-  - `WP_USER` must be the login email (`kamilshykh7@gmail.com`); the stored value is
-    wrapped in `< >` and contains a space, so it's rejected.
-  - `WP_APP_PASSWORD` is wrapped in `< >`; remove the brackets (keep the spaces).
-
-- SSH (Hostinger, 156.67.72.11:65002): enabled by owner, but **not reachable from
-  the cloud environment** — direct TCP times out and tunnelling through the egress
-  proxy is not permitted. Don't rely on SSH; use the REST API (+ Elementor MCP endpoint)
-  and give the owner click-by-click steps for anything else.
+- WordPress REST API: working as administrator.
+- SSH (Hostinger): not reachable from the cloud environment.
 
 ## Open questions for the owner
-- Niche: fashion blog (confirmed). Audience still to confirm (assumed UK women, everyday style).
-- Monetisation plan: ads, affiliate links, sponsored posts, products?
-- Real author: name, photo and short bio of the person writing (not invented).
-- Are there drafts or old posts we should keep?
-- Did the owner run the demo import this morning, or someone else?
-
-## Next step
-Owner reviews the site and does the WP-admin steps above; then Rank Math meta per post,
-content plan and steady publishing.
+- Audience: assumed UK, mainly women, everyday style, all budgets. Confirm or adjust.
+- Monetisation: guest/sponsored posts planned; affiliate programmes? display ads?

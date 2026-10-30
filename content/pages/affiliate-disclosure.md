@@ -3,6 +3,8 @@ type: page
 title: Affiliate Disclosure
 slug: affiliate-disclosure
 excerpt: How The Wow Style makes money, and how we keep our recommendations independent.
+seo_title: Affiliate Disclosure %sep% %sitename%
+description: How The Wow Style makes money through affiliate links and sponsored content, and how we keep our recommendations independent.
 ---
 *Last updated: 30 October 2026*
 

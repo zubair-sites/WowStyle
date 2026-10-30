@@ -193,14 +193,20 @@ def home():
     ]
 
 
-def section_buttons():
-    """Two hero buttons side by side (inner section)."""
+def section_buttons_pair(primary, secondary):
+    """Two buttons side by side (inner section): filled primary, outlined secondary."""
     return {"id": eid(), "elType": "section", "isInner": True,
             "settings": {"content_width": size(520), "gap": "narrow", "structure": "20"},
             "elements": [
-                column([button("Read the latest", f"{SITE}/blog/", align="right")], 50, align_mobile="center"),
-                column([button("Capsule checklist", f"{SITE}/capsule-wardrobe-checklist/", filled=False, align="left")], 50),
+                column([button(*primary, align="right")], 50, align_mobile="center"),
+                column([button(*secondary, filled=False, align="left")], 50),
             ]}
+
+
+def section_buttons():
+    """The two hero buttons on the homepage."""
+    return section_buttons_pair(("Read the latest", f"{SITE}/blog/"),
+                                ("Capsule checklist", f"{SITE}/capsule-wardrobe-checklist/"))
 
 
 def about():
@@ -212,7 +218,7 @@ def about():
             text("<p>The Wow Style is a UK fashion and style journal for people who want to look put together without chasing every trend.</p>", width=680, px_size=19),
         ])], bg=IVORY, pad=(110, 20)),
         section([
-            column([widget("image", {"image": {"id": 81, "url": f"{SITE}/wp-content/uploads/2021/11/jeferson-gomes-CO5DDUO8BWY-unsplash.jpg"},
+            column([widget("image", {"image": {"id": 3660, "url": f"{SITE}/wp-content/uploads/2026/10/about-cover.jpg"},
                              "image_size": "large", "align": "center", "width": size(100, "%")})], 45),
             column([
                 heading("What we write about", "h2", 34, align="left"),
@@ -220,14 +226,15 @@ def about():
                      "<p>We believe in buying less and wearing more. A small wardrobe of pieces you love, that all work together, will always beat a full one with nothing to wear.</p>", align="left"),
                 spacer(10),
                 heading("How we work", "h2", 34, align="left"),
-                text("<p>Our guides are independent. Brands can't pay to change what we say. Some articles may include affiliate links, which means we may earn a small commission if you buy through them, at no extra cost to you. We'll always say when a link is affiliate or a post is sponsored. Read our <a href=\"/affiliate-disclosure/\">affiliate disclosure</a> for details.</p>", align="left"),
+                text("<p>Our guides are independent. Brands can't pay to change what we say. Some articles may include affiliate links, which means we may earn a small commission if you buy through them, at no extra cost to you. We'll always say when a link is affiliate or a post is sponsored.</p>"
+                     "<p>Every article is researched, edited and kept up to date. Read our <a href=\"/editorial-policy/\">editorial policy</a> and <a href=\"/affiliate-disclosure/\">affiliate disclosure</a> for details.</p>", align="left"),
             ], 55, padding=px(10, 10, 10, 50), padding_mobile=px(30, 0, 0, 0)),
         ], pad=(90, 20)),
         section([column([
             heading("Say hello", "h2", 34),
-            text("<p>Questions, ideas or collaboration requests? We'd love to hear from you.</p>"),
+            text("<p>Questions, ideas or collaboration requests? We'd love to hear from you. Writers and brands can also pitch a guest or sponsored article.</p>", width=640),
             spacer(10),
-            button("Contact us", f"{SITE}/contact/"),
+            section_buttons_pair(("Contact us", f"{SITE}/contact/"), ("Write for us", f"{SITE}/write-for-us/")),
         ])], bg=STONE, pad=(80, 20)),
     ]
 
@@ -287,6 +294,20 @@ PAGES = {
 }
 
 
+def plain_content(elements):
+    """Text version of a layout for post_content, which search, feeds and SEO analysis read."""
+    out = []
+    for e in elements:
+        st = e.get("settings") or {}
+        if e.get("widgetType") == "heading" and st.get("header_size", "h2") != "p":
+            tag = st.get("header_size", "h2")
+            out.append(f"<{tag}>{st['title']}</{tag}>")
+        elif e.get("widgetType") == "text-editor":
+            out.append(st["editor"])
+        out.extend(plain_content(e.get("elements", [])))
+    return out
+
+
 def deploy(key):
     title, slug, build = PAGES[key]
     found, _ = wp.request("GET", "/wp/v2/pages", {"slug": slug, "status": "publish,draft", "context": "edit"})
@@ -294,6 +315,7 @@ def deploy(key):
     data = build(old) if key == "contact" else build()
     body = {
         "title": title, "slug": slug, "status": "publish", "template": "elementor_header_footer",
+        "content": "\n".join(plain_content(data)),
         "meta": {"_elementor_edit_mode": "builder", "_elementor_template_type": "wp-page",
                  "_elementor_data": json.dumps(data)},
     }

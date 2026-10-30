@@ -3,6 +3,8 @@ type: page
 title: Privacy & Cookie Policy
 slug: privacy-policy
 excerpt: How The Wow Style collects, uses and protects your personal data, and how we use cookies.
+seo_title: Privacy & Cookie Policy %sep% %sitename%
+description: How The Wow Style collects, uses and protects your personal data under UK GDPR, and how we use cookies.
 ---
 *Last updated: 30 October 2026*
 

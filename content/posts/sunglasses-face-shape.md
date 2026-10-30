@@ -2,8 +2,12 @@
 title: How to Choose Sunglasses for Your Face Shape
 slug: sunglasses-for-your-face-shape
 category: accessories
-image: 294
+image: 3656
 excerpt: Not sure which sunglasses suit you? Work out your face shape in two minutes, then use this simple guide to the frames that flatter it, and what to check before you buy.
+quick: Choose frames that contrast with your face shape: angular frames for round faces, round or cat-eye frames for square faces, frames wider at the bottom for heart-shaped faces, and deep oversized frames for long faces. Oval faces suit most shapes. Always check for UV400 protection.
+seo_title: Sunglasses for Your Face Shape: A Simple Guide %sep% %sitename%
+description: Work out your face shape in two minutes and find the sunglasses that suit it, plus what to check for UV protection, lens category and fit in the UK.
+keyword: sunglasses for face shape, best sunglasses for round face
 ---
 The right sunglasses can make a simple outfit look finished. The wrong pair can feel like a costume. The easiest way to narrow it down is by face shape: as a rule, choose frames that **contrast** with the shape of your face.
 
@@ -43,4 +47,22 @@ Choose deep, oversized frames that cover more of the face, and styles with a str
 
 ## The takeaway
 
-Start with the shape that contrasts with your face, try a few colours (tortoiseshell flatters almost everyone), and never compromise on UV protection.
+Start with the shape that contrasts with your face, try a few colours (tortoiseshell flatters almost everyone), and never compromise on UV protection. Sunglasses are one of the six accessories on our [capsule wardrobe checklist](/capsule-wardrobe-checklist/).
+
+## Frequently asked questions
+
+### How do I know my face shape?
+
+Pull your hair back, look straight into a mirror and trace the outline of your face. Compare the width of your forehead, cheekbones and jaw with the length of your face.
+
+### What sunglasses suit a round face?
+
+Angular frames such as rectangular, square or geometric styles. They add definition and make a round face look longer.
+
+### What does UV400 mean on sunglasses?
+
+UV400 means the lenses block light up to 400 nanometres, which covers both UVA and UVB rays. In the UK, also look for the CE or UKCA mark.
+
+### Are polarised sunglasses worth it?
+
+They're worth it if you drive a lot or spend time near water or snow, because they cut reflected glare. They don't add UV protection on their own.

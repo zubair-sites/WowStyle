@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Source for post/page cover images. Render with: node tools/render_brand.js covers -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--ivory:#F7F4EF;--stone:#E9E3DA;--taupe:#8C7A66}
+body{margin:0;font-family:Jost,sans-serif}
+.cover{width:1600px;height:1000px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink);box-sizing:border-box}
+.cover.ivory{background:var(--ivory)} .cover.stone{background:var(--stone)}
+.cover .frame{position:absolute;inset:150px 210px;border:1px solid rgba(17,17,17,.18)}
+.cover svg{width:230px;height:230px;fill:none;stroke:var(--ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:26px}
+.cover .k{font-size:22px;letter-spacing:.5em;padding-left:.5em;text-transform:uppercase;color:var(--taupe);margin-bottom:22px}
+.cover h1{font-family:'Bodoni Moda';font-variation-settings:"opsz" 48;font-weight:500;font-size:76px;line-height:1.08;text-align:center;margin:0;max-width:980px;text-wrap:balance}
+.cover h1 em{font-weight:400}
+.cover .m{position:absolute;bottom:182px;font-family:'Bodoni Moda';font-size:26px;letter-spacing:.06em}
+.cover .m i{font-size:.6em;margin:0 .35em}
+</style></head><body>
+<template id="icons">
+<svg id="tee" viewBox="0 0 200 200"><path d="M62 42 85 30q15 16 30 0l23 12 32 30-20 22-12-10v96H62V84L50 94 30 72Z"/><path d="M85 30q15 26 30 0"/></svg>
+<svg id="hanger" viewBox="0 0 200 200"><path d="M88 52a12 12 0 1 1 18 10q-6 4-6 12v6"/><path d="M100 80 28 132q-6 6 2 8h140q8-2 2-8Z"/></svg>
+<svg id="sunglasses" viewBox="0 0 200 200"><path d="M28 88h58v16q0 34-29 34T28 104Z"/><path d="M114 88h58v16q0 34-29 34t-29-34Z"/><path d="M86 94q14-12 28 0"/><path d="M28 90 12 76M172 90l16-14"/></svg>
+<svg id="trainer" viewBox="0 0 200 200"><path d="M22 140q0-18 14-28l42-32q10-6 16 4 12 20 36 24l38 10q16 4 16 20v12H22Z"/><path d="M22 150h162"/><path d="m84 94 10 8m-2-18 10 8m-2-18 10 6"/></svg>
+<svg id="coat" viewBox="0 0 200 200"><path d="M72 30 100 50l28-20 36 24-4 118H40L36 54Z"/><path d="M100 50 84 92l16-10 16 10Z"/><path d="M40 116h120M100 92v80"/><circle cx="90" cy="102" r="2"/><circle cx="110" cy="102" r="2"/></svg>
+<svg id="handbag" viewBox="0 0 200 200"><path d="M44 86h112l12 84H32Z"/><path d="M74 86q0-46 26-46t26 46"/><rect x="92" y="100" width="16" height="12" rx="2"/></svg>
+<svg id="star" viewBox="0 0 200 200"><path d="M100 30v140M30 100h140M51 51l98 98M149 51 51 149"/><circle cx="100" cy="100" r="22"/></svg>
+</template>
+<div id="out"></div>
+<script>
+const covers = [
+ ['how-to-style-a-white-t-shirt','ivory','tee','Outfit Ideas','The White <span style="white-space:nowrap">T-Shirt,</span> <em>Seven Ways</em>'],
+ ['capsule-wardrobe-checklist','stone','hanger','Wardrobe Essentials','The Capsule Wardrobe <em>Checklist</em>'],
+ ['sunglasses-for-your-face-shape','ivory','sunglasses','Accessories','Sunglasses for <em>Your Face Shape</em>'],
+ ['white-trainers-guide','stone','trainer','Accessories','White Trainers, <em>Done Right</em>'],
+ ['autumn-layering-guide','ivory','coat','Outfit Ideas','Autumn Layering <em>Without the Bulk</em>'],
+ ['how-to-choose-a-handbag','stone','handbag','Accessories','A Handbag <em>That Lasts</em>'],
+ ['about','stone','hanger','About','Buy less. <em>Wear more.</em>'],
+ ['write-for-us','ivory','star','Contribute','Write for <em>The Wow Style</em>'],
+];
+const icons = document.getElementById('icons').content;
+for (const [id, bg, icon, kicker, title] of covers) {
+  const d = document.createElement('div');
+  d.className = 'cover ' + bg; d.id = id;
+  d.innerHTML = `<div class="frame"></div>${icons.getElementById(icon).outerHTML}<div class="k">${kicker}</div><h1>${title}</h1><div class="m"><i>the</i>WOW<i>style</i></div>`;
+  document.getElementById('out').appendChild(d);
+}
+</script>
+</body></html>
