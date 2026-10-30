@@ -4,7 +4,7 @@ Priority: P1 = now, P2 = soon, P3 = later.
 
 ## Setup
 - [x] P1 Allow `thewowstyle.co.uk` in environment network access
-- [ ] P1 Confirm `WP_*` variables reach the session (`tools/wp.py check`)
+- [x] P1 Confirm `WP_*` variables reach the session (`tools/wp.py check`) — works; owner to remove `< >` and set `WP_USER` to the login email
 - [ ] P1 Answer open questions in `STATUS.md` (owner)
 
 ## Security

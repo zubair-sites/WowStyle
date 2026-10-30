@@ -8,9 +8,11 @@ content**. It is effectively a build from scratch. See `AUDIT.md` for findings.
 
 ## Access
 - Network access to thewowstyle.co.uk: working.
-- WordPress Application Password: owner says it's added, but the variables were not
-  present in the 2026-10-30 session. Environment changes apply to new sessions, so
-  check `tools/wp.py check` at the start of the next session.
+- WordPress REST API: **working as administrator** (checked 2026-10-30), but only
+  after correcting the stored values in-session. Owner to fix the environment:
+  - `WP_USER` must be the login email (`kamilshykh7@gmail.com`); the stored value is
+    wrapped in `< >` and contains a space, so it's rejected.
+  - `WP_APP_PASSWORD` is wrapped in `< >`; remove the brackets (keep the spaces).
 
 - SSH (Hostinger, 156.67.72.11:65002): enabled by owner, but **not reachable from
   the cloud environment** — direct TCP times out and tunnelling through the egress
