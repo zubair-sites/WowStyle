@@ -51,7 +51,8 @@ def request(method, path, params=None, body=None):
     req = urllib.request.Request(url, data=data, headers=h, method=method)
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
-            return json.load(resp), resp.headers
+            raw = resp.read()
+            return (json.loads(raw) if raw.strip() else None), resp.headers
     except urllib.error.HTTPError as e:
         sys.exit(f"{method} {url} -> {e.code}: {e.read().decode(errors='replace')[:500]}")
 

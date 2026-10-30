@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Source for the brand assets. Render with tools/render_brand.js -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--ivory:#F7F4EF;--stone:#E9E3DA;--taupe:#8C7A66}
+body{margin:0;background:transparent;font-family:Jost,sans-serif}
+.asset{display:inline-flex;box-sizing:border-box}
+.it,.wow{font-variation-settings:"opsz" 24}
+.it{font-family:'Bodoni Moda';font-style:italic;font-weight:400}
+.wow{font-family:'Bodoni Moda';font-weight:500;letter-spacing:.04em;line-height:1}
+/* horizontal logo */
+.h{align-items:center;gap:.18em;padding:.18em .25em;font-size:200px}
+.h .it{font-size:.5em}
+.h.light{color:var(--ivory)} .h.dark{color:var(--ink)}
+/* stacked logo */
+.s{flex-direction:column;align-items:center;padding:40px 60px;color:var(--ink)}
+.s .wow{font-size:220px;letter-spacing:.06em}
+.s .tag{font-size:26px;letter-spacing:.55em;padding-left:.55em;text-transform:uppercase;margin-top:22px}
+.s .tag i{font-style:normal;color:var(--taupe)}
+/* icon */
+.icon{width:512px;height:512px;background:var(--ink);color:var(--ivory);align-items:center;justify-content:center}
+.icon .wow{font-size:330px;letter-spacing:0;margin-top:-20px}
+/* og image */
+.og{width:1200px;height:630px;background:var(--ivory);color:var(--ink);flex-direction:column;align-items:center;justify-content:center;position:relative}
+.og .frame{position:absolute;inset:28px;border:1px solid #cfc6ba}
+.og .logo{display:flex;align-items:center;gap:.18em;font-size:150px}.og .logo .it{font-size:.5em}
+.og .tag{margin-top:36px;font-size:22px;letter-spacing:.5em;padding-left:.5em;text-transform:uppercase;color:var(--taupe)}
+/* newsletter */
+.nl{width:1200px;height:500px;background:var(--stone);color:var(--ink);align-items:center;padding:0 90px;gap:70px}
+.nl .mark{width:300px;height:300px;flex:none;border-radius:50%;background:var(--ivory);display:flex;align-items:center;justify-content:center}
+.nl .mark .wow{font-size:190px;margin-top:-12px}
+.nl .k{font-size:18px;letter-spacing:.4em;text-transform:uppercase;color:var(--taupe)}
+.nl h2{font-family:'Bodoni Moda';font-weight:500;font-size:68px;line-height:1.08;margin:18px 0 20px}
+.nl h2 em{font-weight:400}
+.nl p{font-size:24px;line-height:1.5;margin:0;color:#3a3a3a}
+</style></head><body>
+<div id="logo-dark" class="asset h dark"><span class="it">the</span><span class="wow">WOW</span><span class="it">style</span></div><br>
+<div id="logo-light" class="asset h light" style="background:#222"><span class="it">the</span><span class="wow">WOW</span><span class="it">style</span></div><br>
+<div id="logo-stacked" class="asset s"><span class="wow">WOW</span><span class="tag">The Wow Style</span></div><br>
+<div id="site-icon" class="asset icon"><span class="wow">W</span></div><br>
+<div id="og-default" class="asset og"><div class="frame"></div><div class="logo"><span class="it">the</span><span class="wow">WOW</span><span class="it">style</span></div><div class="tag">Fashion · Style · Wardrobe</div></div><br>
+<div id="newsletter" class="asset nl"><div class="mark"><span class="wow">W</span></div><div><div class="k">The Wow List</div><h2>Outfit ideas worth <em>wearing</em>, once a week.</h2><p>Free style notes, wardrobe edits and the pieces we'd actually buy. No spam, unsubscribe anytime.</p></div></div>
+</body></html>

@@ -1,0 +1,46 @@
+---
+title: How to Choose Sunglasses for Your Face Shape
+slug: sunglasses-for-your-face-shape
+category: accessories
+image: 294
+excerpt: Not sure which sunglasses suit you? Work out your face shape in two minutes, then use this simple guide to the frames that flatter it, and what to check before you buy.
+---
+The right sunglasses can make a simple outfit look finished. The wrong pair can feel like a costume. The easiest way to narrow it down is by face shape: as a rule, choose frames that **contrast** with the shape of your face.
+
+## Find your face shape
+
+Pull your hair back, look straight into a mirror and trace the outline of your face (a dry-wipe pen or an old lipstick works). Then compare:
+
+- **Oval:** longer than wide, with a gently rounded jaw.
+- **Round:** about as wide as long, with full cheeks and a soft jaw.
+- **Square:** a strong, angular jaw and a broad forehead, similar width top to bottom.
+- **Heart:** wider at the forehead and cheekbones, narrowing to a pointed chin.
+- **Long or rectangular:** noticeably longer than wide, with straight sides.
+
+## Which frames suit which shape
+
+### Oval
+Lucky you: most shapes work. Keep the frames about as wide as the widest part of your face. Try square, aviator or oversized styles.
+
+### Round
+Add angles. Rectangular, square or geometric frames make the face look longer and more defined. Avoid small, round frames, which exaggerate roundness.
+
+### Square
+Soften the jaw with round, oval or cat-eye frames. Thin metal rims and rimless styles also work well. Avoid boxy, heavy frames.
+
+### Heart
+Balance a wider forehead with frames that are wider at the bottom, or light, rimless styles. Aviators and round frames are a good choice. Avoid heavy, decorated brow lines.
+
+### Long
+Choose deep, oversized frames that cover more of the face, and styles with a strong brow line or decorated sides to add width. Avoid small, narrow frames.
+
+## What to check before you buy
+
+- **UV protection:** in the UK, look for the **CE or UKCA mark** and a label saying *UV400* or *100% UV protection*. Darker lenses don't mean more protection.
+- **Category:** most everyday sunglasses are filter category 2 or 3. Category 4 is too dark for driving.
+- **Polarised lenses** cut glare from water, snow and wet roads. They're worth it if you drive a lot or spend time near water.
+- **Fit:** the frame shouldn't touch your cheeks when you smile, and it shouldn't slide down your nose when you look down.
+
+## The takeaway
+
+Start with the shape that contrasts with your face, try a few colours (tortoiseshell flatters almost everyone), and never compromise on UV protection.

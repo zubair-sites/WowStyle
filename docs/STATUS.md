@@ -3,11 +3,24 @@
 _Last updated: 2026-10-30_
 
 ## Summary
-The site is a fresh install of the Kayleen theme (Elementor) with **no published
-content**. It is effectively a build from scratch. See `AUDIT.md` for findings.
+Brand, homepage, core pages and 6 starter posts are live (see CHANGELOG 2026-10-30
+session 2). Waiting on the owner's review and the WP-admin steps below.
+
+## Needs the owner (in WP admin)
+These live in the theme options / Rivax header-footer templates, which the REST API
+can't reach (installing a code-snippets plugin to do it was blocked by the session's
+safety rules; the owner can allow it instead).
+1. Theme options: logo → `the-wow-style-logo-dark.png` (light version for dark headers);
+   accent colour `#ff2c54` → `#111111`.
+2. Rivax "Default Footer" (1213): Category list (Health/Typography/Music/Travel are demo
+   text), add Privacy Policy + Affiliate Disclosure links, social links, newsletter block
+   (needs Mailchimp API key, or remove it).
+3. Rank Math setup wizard (no meta descriptions/OG/sitemap output yet).
+4. Settings → Reading: untick "Discourage search engines" once happy.
+5. Send a test message through the Contact form.
+6. Delete the WP Reset plugin; real author name/photo/bio (see open questions).
 
 ## Access
-- Network access to thewowstyle.co.uk: working.
 - WordPress REST API: **working as administrator** (checked 2026-10-30), but only
   after correcting the stored values in-session. Owner to fix the environment:
   - `WP_USER` must be the login email (`kamilshykh7@gmail.com`); the stored value is
@@ -20,12 +33,12 @@ content**. It is effectively a build from scratch. See `AUDIT.md` for findings.
   and give the owner click-by-click steps for anything else.
 
 ## Open questions for the owner
-- Niche and audience (fashion? lifestyle? home & interiors?).
+- Niche: fashion blog (confirmed). Audience still to confirm (assumed UK women, everyday style).
 - Monetisation plan: ads, affiliate links, sponsored posts, products?
-- Who is the author/brand shown on the About page?
+- Real author: name, photo and short bio of the person writing (not invented).
 - Are there drafts or old posts we should keep?
 - Did the owner run the demo import this morning, or someone else?
 
 ## Next step
-Security quick fixes (owner, in WP admin), then build: structure, core pages, SEO
-plugin, first batch of posts.
+Owner reviews the site and does the WP-admin steps above; then Rank Math meta per post,
+content plan and steady publishing.
